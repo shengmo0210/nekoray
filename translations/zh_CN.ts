@@ -1665,7 +1665,7 @@ Release note:
     </message>
     <message>
         <source>New</source>
-        <translation>新的</translation>
+        <translation>新建</translation>
     </message>
     <message>
         <source>Move Up</source>
