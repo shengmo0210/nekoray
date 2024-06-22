@@ -676,7 +676,7 @@ For more information, see the document &quot;Configuration/DNS&quot;.</source>
     </message>
     <message>
         <source>Routing Profile</source>
-        <translation type="unfinished"></translation>
+        <translation>启用路由配置</translation>
     </message>
     <message>
         <source>The outbound tag to use when the request is not handled by any rule</source>
@@ -696,11 +696,11 @@ For more information, see the document &quot;Configuration/DNS&quot;.</source>
     </message>
     <message>
         <source>Routing Profiles</source>
-        <translation type="unfinished"></translation>
+        <translation>可用路由配置</translation>
     </message>
     <message>
         <source>New</source>
-        <translation>新的</translation>
+        <translation>新建</translation>
     </message>
     <message>
         <source>Edit</source>
@@ -1649,7 +1649,7 @@ Release note:
     <name>RouteItem</name>
     <message>
         <source>Route Profile</source>
-        <translation type="unfinished"></translation>
+        <translation>路由配置</translation>
     </message>
     <message>
         <source>Name</source>
