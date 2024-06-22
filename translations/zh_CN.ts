@@ -679,14 +679,6 @@ For more information, see the document &quot;Configuration/DNS&quot;.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>proxy</source>
-        <translation>代理</translation>
-    </message>
-    <message>
-        <source>direct</source>
-        <translation>直连</translation>
-    </message>
-    <message>
         <source>The outbound tag to use when the request is not handled by any rule</source>
         <translation>当请求未被任何规则处理时使用的出站标签</translation>
     </message>
