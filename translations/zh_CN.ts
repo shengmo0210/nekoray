@@ -1707,7 +1707,11 @@ Release note:
     </message>
     <message>
         <source>Import JSON</source>
-        <translation type="unfinished">导入 JSON 文件</translation>
+        <translation>导入 JSON</translation>
+    </message>
+    <message>
+        <source>Import JSON Array</source>
+        <translation>导入 JSON 配置</translation>
     </message>
 </context>
 </TS>
