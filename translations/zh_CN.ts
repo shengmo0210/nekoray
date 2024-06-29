@@ -656,11 +656,7 @@ For more information, see the document &quot;Configuration/DNS&quot;.</source>
     </message>
     <message>
         <source>Routing Profile</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>direct</source>
-        <translation>直连</translation>
+        <translation>启用路由配置</translation>
     </message>
     <message>
         <source>The outbound tag to use when the request is not handled by any rule</source>
@@ -676,11 +672,11 @@ For more information, see the document &quot;Configuration/DNS&quot;.</source>
     </message>
     <message>
         <source>Routing Profiles</source>
-        <translation type="unfinished"></translation>
+        <translation>可用路由配置</translation>
     </message>
     <message>
         <source>New</source>
-        <translation>新的</translation>
+        <translation>新建</translation>
     </message>
     <message>
         <source>Edit</source>
@@ -698,11 +694,11 @@ also if the connection cannot be established with the current address family (ip
     </message>
     <message>
         <source>Outbound Domain Strategy</source>
-        <translation type="unfinished"></translation>
+        <translation>出站域名策略</translation>
     </message>
     <message>
         <source>Inbound Domain Strategy</source>
-        <translation type="unfinished"></translation>
+        <translation>入站域名策略</translation>
     </message>
 </context>
 <context>
@@ -1482,31 +1478,31 @@ Split by line.</source>
     </message>
     <message>
         <source>Reset</source>
-        <translation type="unfinished">重置</translation>
+        <translation>重置</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Please run Nekoray as admin</source>
-        <translation type="unfinished"></translation>
+        <translation>请使用管理员方式运行 Nekoray</translation>
     </message>
     <message>
         <source>Add new Group</source>
-        <translation type="unfinished"></translation>
+        <translation>新建分组</translation>
     </message>
     <message>
         <source>Delete selected Group</source>
-        <translation type="unfinished"></translation>
+        <translation>删除选中分组</translation>
     </message>
     <message>
         <source>Edit selected Group</source>
-        <translation type="unfinished"></translation>
+        <translation>编辑选中分组</translation>
     </message>
     <message>
         <source>Remove %1?</source>
-        <translation type="unfinished">删除 %1 ?</translation>
+        <translation>删除 %1 ?</translation>
     </message>
 </context>
 <context>
@@ -1667,7 +1663,7 @@ Release note:
     <name>RouteItem</name>
     <message>
         <source>Route Profile</source>
-        <translation type="unfinished"></translation>
+        <translation>路由配置</translation>
     </message>
     <message>
         <source>Name</source>
@@ -1679,7 +1675,7 @@ Release note:
     </message>
     <message>
         <source>New</source>
-        <translation>新的</translation>
+        <translation>新建</translation>
     </message>
     <message>
         <source>Move Up</source>
@@ -1711,7 +1707,7 @@ Release note:
     </message>
     <message>
         <source>Import JSON</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">导入 JSON 文件</translation>
     </message>
 </context>
 </TS>
