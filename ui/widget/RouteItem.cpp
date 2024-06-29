@@ -123,7 +123,7 @@ RouteItem::RouteItem(QWidget *parent, const std::shared_ptr<NekoGui::RoutingChai
 
     connect(ui->route_import_json, &QPushButton::clicked, this, [=] {
         auto w = new QDialog(this);
-        w->setWindowTitle("Import JSON Array");
+        w->setWindowTitle(tr("Import JSON Array"));
         w->setWindowModality(Qt::ApplicationModal);
 
         auto line = 0;
@@ -132,15 +132,15 @@ RouteItem::RouteItem(QWidget *parent, const std::shared_ptr<NekoGui::RoutingChai
 
         auto *tEdit = new QTextEdit;
         tEdit->setPlaceholderText("[\n"
-            "      {\n"
-            "        \"outbound\": \"dns-out\",\n"
-            "        \"protocol\": \"dns\"\n"
-            "      },\n"
-            "      {\n"
-            "        \"outbound\": \"dns-out\",\n"
-            "        \"protocol\": \"udp\"\n"
-            "      }\n"
-            "    ]");
+            "  {\n"
+            "    \"outbound\": \"dns-out\",\n"
+            "    \"protocol\": \"dns\"\n"
+            "  },\n"
+            "  {\n"
+            "    \"outbound\": \"dns-out\",\n"
+            "    \"protocol\": \"udp\"\n"
+            "  }\n"
+            "]");
         layout->addWidget(tEdit, line++, 0);
 
         auto *buttons = new QDialogButtonBox;
