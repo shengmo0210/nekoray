@@ -129,6 +129,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     {
         auto font = ui->masterLogBrowser->font();
         font.setPointSize(9);
+        font.setFamily("Microsoft YaHei");
         ui->masterLogBrowser->setFont(font);
         qvLogDocument->setDefaultFont(font);
     }
