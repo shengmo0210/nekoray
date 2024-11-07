@@ -144,6 +144,10 @@
         <translation>默认 uTLS 指纹</translation>
     </message>
     <message>
+        <source>Padding</source>
+        <translation>填充</translation>
+    </message>
+    <message>
         <source>Core Options</source>
         <translation>内核选项</translation>
     </message>
@@ -639,6 +643,46 @@ For NekoBox, this rewrites the underlying(localhost) DNS in Tun Mode, normal mod
         <translation>通用</translation>
     </message>
     <message>
+        <source>Hijack</source>
+        <translation>劫持</translation>
+    </message>
+    <message>
+        <source>DNS Server</source>
+        <translation>DNS 服务器</translation>
+    </message>
+    <message>
+        <source>Enable</source>
+        <translation>启用</translation>
+    </message>
+    <message>
+        <source>How does it work?</source>
+        <translation>DNS 劫持是如何工作的?</translation>
+    </message>
+    <message>
+        <source>Listen Address</source>
+        <translation>监听地址</translation>
+    </message>
+    <message>
+        <source>Listen Port</source>
+        <translation>监听端口</translation>
+    </message>
+    <message>
+        <source>Rules</source>
+        <translation>规则</translation>
+    </message>
+    <message>
+        <source>IPv4 Response</source>
+        <translation>IPv4 响应</translation>
+    </message>
+    <message>
+        <source>IPv6 Response</source>
+        <translation>IPv6 响应</translation>
+    </message>
+    <message>
+        <source>Redirect Settings</source>
+        <translation>重定向设置</translation>
+    </message>
+    <message>
         <source>DNS</source>
         <translation></translation>
     </message>
@@ -700,7 +744,11 @@ For more information, see the document &quot;Configuration/DNS&quot;.</source>
     </message>
     <message>
         <source>New</source>
-        <translation>新的</translation>
+        <translation>新建</translation>
+    </message>
+    <message>
+        <source>Clone</source>
+        <translation>克隆</translation>
     </message>
     <message>
         <source>Edit</source>
@@ -737,8 +785,16 @@ also if the connection cannot be established with the current address family (ip
         <translation>Tun 设置</translation>
     </message>
     <message>
+        <source>Stack</source>
+        <translation>Tun 实现</translation>
+    </message>
+    <message>
         <source>Tun Enable IPv6</source>
         <translation>启用 Tun IPv6</translation>
+    </message>
+    <message>
+        <source>Strict Route</source>
+        <translation>严格路由</translation>
     </message>
     <message>
         <source>Troubleshooting</source>
@@ -1201,6 +1257,10 @@ https://matsuridayo.github.io/n-configuration/#vpn-tun</translation>
     <message>
         <source>Traffic</source>
         <translation>流量</translation>
+    </message>
+    <message>
+        <source>System DNS</source>
+        <translation>系统 DNS</translation>
     </message>
     <message>
         <source>System Proxy</source>
@@ -1767,7 +1827,7 @@ Release note:
     </message>
     <message>
         <source>New</source>
-        <translation>新的</translation>
+        <translation>新建</translation>
     </message>
     <message>
         <source>Move Up</source>

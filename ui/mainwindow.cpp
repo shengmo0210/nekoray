@@ -115,13 +115,22 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 
     // Setup log UI
     ui->splitter->restoreState(DecodeB64IfValid(NekoGui::dataStore->splitter_state));
-    new SyntaxHighlighter(qApp->styleHints()->colorScheme() == Qt::ColorScheme::Dark || NekoGui::dataStore->theme.toLower() == "qdarkstyle", qvLogDocument);
+    if (NekoGui::dataStore->theme.toLower() == "windowsvista" || NekoGui::dataStore->theme.toLower() == "windows") {
+        new SyntaxHighlighter(false, qvLogDocument);
+    } else {
+        new SyntaxHighlighter(qApp->styleHints()->colorScheme() == Qt::ColorScheme::Dark || NekoGui::dataStore->theme.toLower() == "qdarkstyle", qvLogDocument);
+    }
     qvLogDocument->setUndoRedoEnabled(false);
     ui->masterLogBrowser->setUndoRedoEnabled(false);
     ui->masterLogBrowser->setDocument(qvLogDocument);
-    ui->masterLogBrowser->setFont(QFontDatabase::systemFont(QFontDatabase::FixedFont));
+    ui->masterLogBrowser->setFont(QFontDatabase::systemFont(QFontDatabase::GeneralFont));
 
     connect(qApp->styleHints(), &QStyleHints::colorSchemeChanged, this, [=](const Qt::ColorScheme& scheme) {
+        //if (NekoGui::dataStore->theme.toLower() == "windowsvista" || NekoGui::dataStore->theme.toLower() == "windows") {
+        //    new SyntaxHighlighter(false, qvLogDocument);
+        //} else {
+        //    new SyntaxHighlighter(scheme == Qt::ColorScheme::Dark, qvLogDocument);
+        //}
         new SyntaxHighlighter(scheme == Qt::ColorScheme::Dark, qvLogDocument);
         themeManager->ApplyTheme(NekoGui::dataStore->theme, true);
     });
