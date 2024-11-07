@@ -1602,7 +1602,7 @@ Split by line.</source>
     </message>
     <message>
         <source>Url Test Selected</source>
-        <translation>URL 测试选中配置延迟</translation>
+        <translation>URL 测试</translation>
     </message>
     <message>
         <source>Ctrl+Shift+S</source>
