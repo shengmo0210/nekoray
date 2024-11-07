@@ -101,8 +101,10 @@ DialogBasicSettings::DialogBasicSettings(QWidget *parent)
         CACHE.needRestart = true;
     });
     connect(ui->font, &QComboBox::currentTextChanged, this, [=](const QString &font) {
-        font.setPointSize(NekoGui::dataStore->font_size);
-        qApp->setFont(font);
+        auto prefont = qApp->font();
+        prefont.setFamily(font);
+        prefont.setPointSize(NekoGui::dataStore->font_size);
+        qApp->setFont(prefont);
         NekoGui::dataStore->font = font;
         NekoGui::dataStore->Save();
         adjustSize();
