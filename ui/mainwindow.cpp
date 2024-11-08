@@ -123,7 +123,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     qvLogDocument->setUndoRedoEnabled(false);
     ui->masterLogBrowser->setUndoRedoEnabled(false);
     ui->masterLogBrowser->setDocument(qvLogDocument);
-    ui->masterLogBrowser->setFont(QFontDatabase::systemFont(QFontDatabase::GeneralFont));
+    //ui->masterLogBrowser->setFont(QFontDatabase::systemFont(QFontDatabase::GeneralFont));
+    ui->masterLogBrowser->setFont(qApp->font());
 
     connect(qApp->styleHints(), &QStyleHints::colorSchemeChanged, this, [=](const Qt::ColorScheme& scheme) {
         //if (NekoGui::dataStore->theme.toLower() == "windowsvista" || NekoGui::dataStore->theme.toLower() == "windows") {
