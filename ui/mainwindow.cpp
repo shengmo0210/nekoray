@@ -15,6 +15,7 @@
 #include "ui/dialog_manage_routes.h"
 #include "ui/dialog_vpn_settings.h"
 #include "ui/dialog_hotkey.h"
+#include "main/NekoGui.hpp"
 
 #include "3rdparty/qrcodegen.hpp"
 #include "3rdparty/VT100Parser.hpp"
@@ -126,7 +127,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     ui->masterLogBrowser->setFont(QFontDatabase::systemFont(QFontDatabase::GeneralFont));
     {
         auto font = ui->masterLogBrowser->font();
-        font.setFamily("Microsoft YaHei UI");
+        // font.setFamily("Microsoft YaHei UI");
+        font.setFamily(NekoGui::dataStore->font);
         font.setPointSize(NekoGui::dataStore->font_size);
         ui->masterLogBrowser->setFont(font);
         qvLogDocument->setDefaultFont(font);

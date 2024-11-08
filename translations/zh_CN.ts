@@ -785,16 +785,8 @@ also if the connection cannot be established with the current address family (ip
         <translation>Tun 设置</translation>
     </message>
     <message>
-        <source>Stack</source>
-        <translation>Tun 实现</translation>
-    </message>
-    <message>
         <source>Tun Enable IPv6</source>
         <translation>启用 Tun IPv6</translation>
-    </message>
-    <message>
-        <source>Strict Route</source>
-        <translation>严格路由</translation>
     </message>
     <message>
         <source>Troubleshooting</source>
