@@ -123,15 +123,16 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     qvLogDocument->setUndoRedoEnabled(false);
     ui->masterLogBrowser->setUndoRedoEnabled(false);
     ui->masterLogBrowser->setDocument(qvLogDocument);
-    //ui->masterLogBrowser->setFont(QFontDatabase::systemFont(QFontDatabase::GeneralFont));
-    ui->masterLogBrowser->setFont(qApp->font());
+    ui->masterLogBrowser->setFont(QFontDatabase::systemFont(QFontDatabase::GeneralFont));
+    {
+        auto font = ui->masterLogBrowser->font();
+        font.setFamily("Microsoft YaHei UI");
+        font.setPointSize(NekoGui::dataStore->font_size);
+        ui->masterLogBrowser->setFont(font);
+        qvLogDocument->setDefaultFont(font);
+    }
 
     connect(qApp->styleHints(), &QStyleHints::colorSchemeChanged, this, [=](const Qt::ColorScheme& scheme) {
-        //if (NekoGui::dataStore->theme.toLower() == "windowsvista" || NekoGui::dataStore->theme.toLower() == "windows") {
-        //    new SyntaxHighlighter(false, qvLogDocument);
-        //} else {
-        //    new SyntaxHighlighter(scheme == Qt::ColorScheme::Dark, qvLogDocument);
-        //}
         new SyntaxHighlighter(scheme == Qt::ColorScheme::Dark, qvLogDocument);
         themeManager->ApplyTheme(NekoGui::dataStore->theme, true);
     });
