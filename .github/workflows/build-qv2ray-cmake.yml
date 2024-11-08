@@ -16,10 +16,10 @@ jobs:
   build-go:
     strategy:
       matrix:
-        # cross_os: [ windows, linux, darwin ]
-        # cross_arch: [ amd64, arm64 ]
-        cross_os: [ windows ]
-        cross_arch: [ amd64 ]
+        cross_os: [ windows, linux, darwin ]
+        cross_arch: [ amd64, arm64 ]
+        # cross_os: [ windows ]
+        # cross_arch: [ amd64 ]
         include:
           - cross_os: public_res
             cross_arch: public_res
