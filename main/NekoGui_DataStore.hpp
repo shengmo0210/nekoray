@@ -112,6 +112,7 @@ namespace NekoGui {
         QStringList remember_spmode = {};
         int remember_id = -1919;
         bool remember_enable = false;
+        bool windows_set_admin = false;
 
         // Socks & HTTP Inbound
         QString inbound_address = "127.0.0.1";
@@ -126,7 +127,7 @@ namespace NekoGui {
         bool fake_dns = false;
         bool enable_gso = false;
         bool auto_redirect = false;
-        QString vpn_implementation = "gvisor";
+        QString vpn_implementation = "system";
         int vpn_mtu = 1500;
         bool vpn_ipv6 = false;
         bool vpn_strict_route = true;

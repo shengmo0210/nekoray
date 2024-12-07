@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-if [[ $(uname -m) == 'aarch64' || $(uname -m) == 'arm64' ]]; then
+if [[ $1 == 'arm64' ]]; then
   ARCH="arm64"
 else
   ARCH="amd64"
@@ -31,6 +31,4 @@ popd
 
 codesign --force --deep --sign - $BUILD/nekoray.app
 
-#### pack dmg ###
-sudo npm install -g appdmg
-appdmg appdmg.json $DEST/nekoray.dmg
+mv $BUILD/nekoray.app $DEST
