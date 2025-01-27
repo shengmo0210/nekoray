@@ -678,7 +678,7 @@ For more information, see the document &quot;Configuration/DNS&quot;.</source>
     </message>
     <message>
         <source>New</source>
-        <translation>新的</translation>
+        <translation>新建</translation>
     </message>
     <message>
         <source>Edit</source>
@@ -1849,7 +1849,7 @@ Release note:
     </message>
     <message>
         <source>New</source>
-        <translation>新的</translation>
+        <translation>新建</translation>
     </message>
     <message>
         <source>Move Up</source>
